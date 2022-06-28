@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<style>
+		/* 전체 */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#wrap {
+			display: flex;
+			flex-flow: row wrap;
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		/* 헤더 영역 */
+		.header {
+			order: 1;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			width: 100%;
+		}
+
+		.header h1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 12.5%;
+			height: 142px;
+			background: #ff6b57;
+		}
+
+		.header nav {
+			width: 87.5%;
+			min-height: 80px;
+			background: #ff6b57;
+		}
+
+		/* 슬라이더 영역 */
+		.slider_section {
+			order: 2;
+			width: 50%;
+			background: #3c90be;
+			text-align: center;
+			height: 440px;
+		}
+
+		/* 갤러리 영역 */
+		.gallery_section {
+			order: 3;
+			width: 27.083333333333333333333333333333%;
+			background: #f8de73;
+		}
+
+		/* 인기 검색어 영역 */
+		.rankup_section {
+			order: 4;
+			width: 22.916666666666666666666666666667%;
+			background: #00d2a5;
+		}
+
+		/* 최근 글 영역 */
+		.latest_post_section {
+			order: 5;
+			width: 30%;
+			background: #9cabe4;
+			height: 270px;
+		}
+
+		/* 인기 글 영역 */
+		.popular_post_section {
+			order: 6;
+			width: 30%;
+			background: #d76817;
+		}
+
+		/* 배너 영역 */
+		.banner_section {
+			order: 7;
+			display: flex;
+			flex-flow: column nowrap;
+			width: 22.916666666666666666666666666667%;
+		}
+
+		.banner_section div {
+			flex: 1 1 0;
+		}
+
+		.banner_section div.banner_box_01 {
+			background: #0175bb;
+		}
+
+		.banner_section div.banner_box_02 {
+			background: #1261c9;
+		}
+
+		/* 소셜 네트워크 영역 */
+		.social_section {
+			order: 8;
+			width: 17.083333333333333333333333333333%;
+			background: #fe6eda;
+		}
+
+		/* 푸터 영역 */
+		.footer {
+			order: 9;
+			width: 100%;
+			height: 94px;
+			background: #474747;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- 헤더 영역 -->
+		<header class="header">
+			<h1>제목</h1>
+			<nav>메뉴</nav>
+		</header>
+		<!-- 슬라이더 영역 -->
+		<section class="slider_section">슬라이더</section>
+		<!-- 갤러리 영역 -->
+		<section class="gallery_section">갤러리</section>
+		<!-- 인기 검색어 영역 -->
+		<section class="rankup_section">인기 검색어</section>
+		<!-- 최근 글 영역 -->
+		<section class="latest_post_section">최근 글</section>
+		<!-- 인기 글 영역 -->
+		<section class="popular_post_section">인기 글</section>
+		<!-- 배너 영역 -->
+		<section class="banner_section">
+			<div class="banner_box_01">배너 1</div>
+			<div class="banner_box_02">배너 2</div>
+		</section>
+		<!-- 소셜 네트워크 영역 -->
+		<section class="social_section">소셜 네트워크</section>
+		<!-- 푸터 영역 -->
+		<footer class="footer">푸터</footer>
+	</div>
+</body>
+
+</html>
